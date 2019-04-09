@@ -114,6 +114,8 @@ class Content extends PureComponent {
                                         <span>{language[lang].work}</span>
                                         <h4>Nativapps</h4>
                                         <span>{language[lang].work}</span>
+                                        <h4>CondorLabs</h4>
+                                        <span>{language[lang].work}</span>
                                     </div>
                                 </Col>
                                 <Col xs={12} className={'wrap-card'}>
