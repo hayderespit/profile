@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Grid } from 'react-flexbox-grid';
+import Header from './components/Header/Header';
+import Content from './components/Content/Content';
 
 class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      language: 'es'
+    }
+  }
+
+  componentDidMount(){
+    let language = localStorage.getItem('language');
+    if (language)
+      this.setState({language});
+  }
+
+  _changeLang = () => {
+    const { language } = this.state;
+    let lang = 'es';
+    if(language === 'es')
+      lang = 'en';
+    this.setState({ language: lang });
+    localStorage.removeItem('language');
+    localStorage.setItem('language', lang);
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hayder Espinoza</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Grid fluid>
+        <Header lang={this.state.language} changeLang={this._changeLang}/>
+        <Content lang={this.state.language}/>
+      </Grid>
     );
   }
 }

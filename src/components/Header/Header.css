@@ -1,0 +1,27 @@
+.img-profile{
+    border-radius: 50%;
+    /* border: 10px solid rgba(0, 127, 255, 0.5); */
+    border: 10px solid #f0f2f5;
+}
+.wrap-profile{
+    /* background: #f0f2f5; */
+    background-image: url('../../assets/img/bg_header.svg');
+    padding: 20px 0 20px 0
+}
+
+.name, .work{
+    color: #0049c5;
+}
+.name{
+    font-size: 35px;
+    line-height: 0;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.work{
+    font-size: 25px;
+}
+.language{
+    text-align: right;
+    padding: 0 55px;
+}

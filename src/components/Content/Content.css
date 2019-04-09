@@ -1,0 +1,42 @@
+.wrap-card{
+    text-align: left;
+}
+.title{
+    text-transform: uppercase;
+}
+.wrap-content{
+    background: #f7f7f7;
+    padding: 40px 0;
+}
+.wrap-card{
+    margin: 5px;
+}
+.card{
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+.card p{
+    text-align: justify;
+    line-height: 22px;
+}
+.card h4{
+    margin-bottom: 4px;
+}
+.card h3{
+    margin-top: 0;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    float: right;
+    margin-left: 5px;    
+}
+.circle-active{
+    background: #0049c5;
+}
+.skill{
+    margin-top: 10px;
+}
